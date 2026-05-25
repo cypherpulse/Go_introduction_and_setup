@@ -4,37 +4,37 @@ package main
 
 import (
 	"fmt"
-	"strings"
 	"sort"
+	"strings"
 )
 
-func main(){
+func main() {
 	greeting := "Hello Bradley loves Go Libraries"
 
-	//strings package - 
+	//strings package -
 
-	fmt.Println(strings.Contains(greeting,"Bradley"))
-	fmt.Println(strings.ReplaceAll(greeting,"Hello","Hi"))
+	fmt.Println(strings.Contains(greeting, "Bradley"))
+	fmt.Println(strings.ReplaceAll(greeting, "Hello", "Hi"))
 	fmt.Println(strings.ToUpper(greeting))
-	fmt.Println(strings.Index(greeting,"B"))
+	fmt.Println(strings.Index(greeting, "B"))
 	fmt.Println(strings.Split(greeting, ""))
 
 	//the original value is unchanged
-	fmt.Println("Original string value =",greeting)
+	fmt.Println("Original string value =", greeting)
 
 	//Sort Package-
 
-	age:=[]int{45,20,35,30,75,60,50,25}
-	sort.Ints(ages)s
+	ages := []int{45, 20, 35, 30, 75, 60, 50, 25}
+	sort.Ints(ages)
 	fmt.Println(ages)
 
-	index := sort.SearchInts(ages,30)
+	index := sort.SearchInts(ages, 30)
+	fmt.Println(index)
 
-	names := []strings{"yoshi","mario","peach","bowser","luigi"}
+	names := []string{"yoshi", "mario", "peach", "bowser", "luigi"}
 	sort.Strings(names)
 	fmt.Println(names)
 
-	fmt.println(sort.SearchStrings(names, "bowser"))
-
+	fmt.Println(sort.SearchStrings(names, "bowser"))
 
 }
