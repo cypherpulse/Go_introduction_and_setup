@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"math"
 )
 
 // functions are reusable blocks of code that perform a specific task. They allow you to break down your code into smaller, more manageable pieces, and can be called multiple times throughout your program. In Go, you can define a function using the func keyword, followed by the function name, a list of parameters (if any), and the function body enclosed in curly braces.
@@ -21,7 +22,7 @@ func cycleNames(n []string, f func(string)) {
 }
 
 func areaOfCircle(r float64) float64 {
-	return 3.14 * r * r
+	return math.Pi * r * r
 }
 
 func main() {
