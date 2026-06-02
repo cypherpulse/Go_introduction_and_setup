@@ -4,15 +4,33 @@ import (
 	"fmt"
 )
 
-func updateName(x string){
-	x="wedge"
+func updateName(x string) string {
+	x = "wedge"
+	return x
 }
 
-func main(){
-	// primitive tyes -> they are types that hold a single value, such as int, float, bool, and string. When you pass a primitive type to a function, you are passing a copy of the value. This means that any changes made to the parameter inside the function will not affect the original variable outside the function.
+func updateMenu(y map[string]float64) {
+	y["Yoghurt"] = 8.99
+}
 
-	name:= "tifa"
+func main() {
+	// primitive tyes -> they are types
 
-	updateName(name)
+	name := "tifa"
+
+	name = updateName(name)
 	fmt.Println(name)
+
+	// Derived types -> they are references to the underlying data structure. When you assign a non-primitive type to a new variable, you are creating a reference to the same underlying data structure, rather than creating a new copy of the data. This means that changes made to the data through one variable will affect all variables that reference the same data.
+	// In Go, the following types are considered derived types: arrays, slices, maps, structs, channels, and interfaces. When you assign a variable of one of these types to another variable, you are creating a reference to the same underlying data structure. For example:
+	menu := map[string]float64{
+		"Burger": 5.99,
+		"Pizza":  7.99,
+		"Salad":  4.99,
+		"Soda":   1.99,
+	}
+
+	updateMenu(menu)
+	fmt.Println(menu)
+
 }
