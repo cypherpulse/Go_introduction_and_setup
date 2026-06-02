@@ -1,0 +1,5 @@
+Bill breakdown: 
+Cake:                    .... $100.00
+Mango:                   .... $10.00
+Tip:                     .... $30.00
+Total:                   .... $140.00
