@@ -18,7 +18,7 @@ func main() {
 	fmt.Println("Price of Burger:", menu["Burger"])
 
 	// looping maps
-	for k,v:= range menu {
+	for k, v := range menu {
 		fmt.Printf("%s: $%.2f\n", k, v)
 	}
 
